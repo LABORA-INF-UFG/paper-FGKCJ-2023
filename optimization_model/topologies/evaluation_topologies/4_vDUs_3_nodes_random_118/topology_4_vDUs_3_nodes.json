@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "ID": 0,
+      "cpu": 0,
+      "RAM": 0,
+      "R": 0
+    },
+    {
+      "ID": 1,
+      "cpu": 256,
+      "RAM": 256,
+      "R": 10,
+      "cost": 0.2585
+    },
+    {
+      "ID": 2,
+      "cpu": 0,
+      "RAM": 0,
+      "R": 10
+    },
+    {
+      "ID": 3,
+      "cpu": 0,
+      "RAM": 0,
+      "R": 10
+    },
+    {
+      "ID": 4,
+      "cpu": 0,
+      "RAM": 0,
+      "R": 5
+    },
+    {
+      "ID": 5,
+      "cpu": 32,
+      "RAM": 32,
+      "R": 2,
+      "cost": 1
+    },
+    {
+      "ID": 6,
+      "cpu": 32,
+      "RAM": 32,
+      "R": 2,
+      "cost": 1
+    },
+    {
+      "ID": 7,
+      "cpu": 0,
+      "RAM": 0,
+      "R": 10
+    },
+    {
+      "ID": 8,
+      "cpu": 0,
+      "RAM": 0,
+      "R": 5
+    },
+    {
+      "ID": 9,
+      "cpu": 32,
+      "RAM": 32,
+      "R": 2,
+      "cost": 1
+    },
+    {
+      "ID": 10,
+      "cpu": 32,
+      "RAM": 32,
+      "R": 2,
+      "cost": 1
+    }
+  ],
+  "DUs": [
+    {
+      "ID": 0,
+      "node": 5
+    },
+    {
+      "ID": 1,
+      "node": 6
+    },
+    {
+      "ID": 2,
+      "node": 9
+    },
+    {
+      "ID": 3,
+      "node": 10
+    }
+  ],
+  "links": [
+    {
+      "from_Node": 0,
+      "to_Node": 1,
+      "delay": 0.127,
+      "bw": 2.5
+    },
+    {
+      "from_Node": 1,
+      "to_Node": 2,
+      "delay": 0.127,
+      "bw": 2.5
+    },
+    {
+      "from_Node": 2,
+      "to_Node": 3,
+      "delay": 0.127,
+      "bw": 2.5
+    },
+    {
+      "from_Node": 3,
+      "to_Node": 4,
+      "delay": 0.163,
+      "bw": 2.5
+    },
+    {
+      "from_Node": 4,
+      "to_Node": 5,
+      "delay": 0.163,
+      "bw": 1
+    },
+    {
+      "from_Node": 4,
+      "to_Node": 6,
+      "delay": 0.163,
+      "bw": 1
+    },
+    {
+      "from_Node": 3,
+      "to_Node": 7,
+      "delay": 0.127,
+      "bw": 2.5
+    },
+    {
+      "from_Node": 7,
+      "to_Node": 8,
+      "delay": 0.127,
+      "bw": 2.5
+    },
+    {
+      "from_Node": 8,
+      "to_Node": 9,
+      "delay": 0.127,
+      "bw": 1
+    },
+    {
+      "from_Node": 8,
+      "to_Node": 10,
+      "delay": 0.127,
+      "bw": 1
+    }
+  ]
+}

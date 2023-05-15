@@ -1,0 +1,153 @@
+4 3
+Creating topology
+-----------------------------------------------------------------------------------------------------------
+Creation time:	0.0003361701965332031
+-----------------------------------------------------------------------------------------------------------
+Running Model
+-----------------------------------------------------------------------------------------------------------
+Model creation time:	0.0146026611328125
+-----------------------------------------------------------------------------------------------------------
+ ! --------------------------------------------------- CP Optimizer 22.1.0.0 --
+ ! Maximization problem - 76 variables, 224 constraints
+ ! Presolve      : 24 extractables eliminated
+ ! TimeLimit            = 180
+ ! LogPeriod            = 500000
+ ! SearchType           = IterativeDiving
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 175.3 (before), 175.3 (after)
+ !  . Memory usage      : 520.3 kB (before), 520.3 kB (after)
+ ! Using parallel search with 16 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         76                 -
+ + New bound is 17.39600
+ *     -6.204001       50  0.27s        1      (gap is 380.4%)
+ *     -5.614001      100  0.27s        1      (gap is 409.9%)
+ *     -5.260001     3066  0.27s        3      (gap is 430.7%)
+ *     -5.142001      139  0.27s        6      (gap is 438.3%)
+ *     -4.788001     3099  0.38s        9      (gap is 463.3%)
+ *     -4.670001    27328  1.08s        8      (gap is 472.5%)
+ *     -4.552001    32499  1.42s       14      (gap is 482.2%)
+       -4.552001    39009          1    1   F        -
+ + New bound is 17.02725 (gap is 474.1%)
+       -4.552001    40036          1   11   F        -
+ + New bound is 16.66426 (gap is 466.1%)
+       -4.552001    74634          1   13   F        -
+ + New bound is 16.30694 (gap is 458.2%)
+       -4.552001    77461          1    2   F        -
+ + New bound is 15.95521 (gap is 450.5%)
+       -4.552001    83819          1    9   F        -
+ + New bound is 15.60897 (gap is 442.9%)
+       -4.552001     100k          1    9   F        -
+ + New bound is 15.26814 (gap is 435.4%)
+       -4.552001    97893          1    4   F    66 != w_3
+ + New bound is 14.93264 (gap is 428.0%)
+       -4.552001     107k          1   11   F        -
+ + New bound is 14.60238 (gap is 420.8%)
+       -4.552001     123k          1   13   F        -
+ + New bound is 14.27728 (gap is 413.6%)
+       -4.552001     123k          1   15   F        -
+ + New bound is 13.95726 (gap is 406.6%)
+       -4.552001     137k          1    4   F        -
+ + New bound is 13.64224 (gap is 399.7%)
+       -4.552001     138k          1   15   F        -
+ + New bound is 13.33214 (gap is 392.9%)
+ ! Time = 5.50s, Average fail depth = 28, Memory usage = 22.2 MB
+ ! Current bound is 13.33214 (gap is 392.9%)
+ !          Best Branches  Non-fixed    W       Branch decision
+       -4.552001     143k          1    9   F        -
+ + New bound is 13.02689 (gap is 386.2%)
+       -4.552001     153k          1    4   F        -
+ + New bound is 12.72641 (gap is 379.6%)
+       -4.552001     141k          1    1   F     0 != w_aux_1
+ + New bound is 12.43062 (gap is 373.1%)
+       -4.552001     180k          1    2   F     0 != y_6
+ + New bound is 12.13945 (gap is 366.7%)
+       -4.552001     196k          1    7   F     0 != y_6
+ + New bound is 11.85284 (gap is 360.4%)
+       -4.552001     187k          1   13   F     1 != w_aux_0
+ + New bound is 11.57070 (gap is 354.2%)
+       -4.552001     212k          1    7   F     0 != y_6
+ + New bound is 11.29297 (gap is 348.1%)
+       -4.552001     204k          1   13   F    38 != w_1
+ + New bound is 9.105851 (gap is 300.0%)
+       -4.552001     241k          1   11   F     0 != y_6
+ + New bound is 8.866635 (gap is 294.8%)
+       -4.552001     235k          1   15   F     4 != w_1
+ + New bound is 8.631156 (gap is 289.6%)
+       -4.552001     282k          1    9   F     0 != y_eMBB_1
+ + New bound is 8.399357 (gap is 284.5%)
+       -4.552001     283k          1    1   F     0 != y_eMBB_1
+ + New bound is 8.171180 (gap is 279.5%)
+       -4.552001     296k          1    2   F        -
+ + New bound is 7.946567 (gap is 274.6%)
+       -4.552001     304k          1    1   F     0 != y_eMBB_1
+ + New bound is 7.725465 (gap is 269.7%)
+       -4.552001     316k          1    1   F     0 != y_6
+ + New bound is 7.507817 (gap is 264.9%)
+       -4.552001     315k          1   13   F        -
+ + New bound is 7.293570 (gap is 260.2%)
+       -4.552001     326k          1    1   F     0 != y_6
+ + New bound is 7.082670 (gap is 255.6%)
+       -4.552001     326k          1    9            -
+ + New bound is -4.551545 (gap is 0.01%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 7 solutions found.
+ ! Best objective         : -4.552001 (optimal - effective tol. is 0.0004552)
+ ! Best bound             : -4.551545
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 5666554
+ ! Number of fails        : 2729594
+ ! Total memory usage     : 24.4 MB (24.3 MB CP Optimizer + 0.0 MB Concert)
+ ! Time spent in solve    : 16.92s (16.92s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 334902.7
+ ! ----------------------------------------------------------------------------
+Solution status: Optimal
+------------------------ vRAN positioning ------------------------
+vDU: 0	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+vDU: 1	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+vDU: 2	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+vDU: 3	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+------------------------ Selected Paths URLLC ------------------------
+Slice 0 path: [0, 1, 2, 3, 4, 5]
+Slice 1 path: [0, 1, 2, 3, 4, 6]
+Slice 2 path: [0, 1, 2, 7, 8, 9]
+Slice 3 path: [0, 1, 2, 7, 8, 10]
+------------------------ Selected Paths eMBB ------------------------
+Slice eMBB of vDU 5 path: [0, 1, 2, 7, 3, 4, 5]
+Slice eMBB of vDU 6 path: [0, 1, 2, 7, 3, 4, 6]
+Slice eMBB of vDU 9 path: [0, 1, 2, 3, 7, 8, 9]
+Slice eMBB of vDU 10 path: [0, 1, 2, 3, 7, 8, 10]
+------------------------ Selected Phis ------------------------
+For slice 0 Phi in node 1 is 16%
+For slice 0 Phi in node 2 is 12%
+For slice 0 Phi in node 3 is 20%
+For slice 0 Phi in node 4 is 30%
+For slice 0 Phi in node 5 is 60%
+For slice 1 Phi in node 1 is 24%
+For slice 1 Phi in node 2 is 24%
+For slice 1 Phi in node 3 is 56%
+For slice 1 Phi in node 4 is 40%
+For slice 1 Phi in node 6 is 60%
+For slice 2 Phi in node 1 is 30%
+For slice 2 Phi in node 2 is 26%
+For slice 2 Phi in node 7 is 38%
+For slice 2 Phi in node 8 is 40%
+For slice 2 Phi in node 9 is 60%
+For slice 3 Phi in node 1 is 8%
+For slice 3 Phi in node 2 is 16%
+For slice 3 Phi in node 7 is 40%
+For slice 3 Phi in node 8 is 40%
+For slice 3 Phi in node 10 is 80%
+------------------------ Admitted flows ------------------------
+3 flows admitted in slice 0
+4 flows admitted in slice 1
+4 flows admitted in slice 2
+3 flows admitted in slice 3
+7.634 pkt size to vDU 0
+7.634 pkt size to vDU 1
+7.634 pkt size to vDU 2
+7.634 pkt size to vDU 3
+-------------------------------------------------------------------------------------------------------
+Model solve time:	16.97523522377014
+-------------------------------------------------------------------------------------------------------

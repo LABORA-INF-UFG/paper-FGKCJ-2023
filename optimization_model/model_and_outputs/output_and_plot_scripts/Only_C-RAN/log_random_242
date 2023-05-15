@@ -1,0 +1,124 @@
+4 3
+Creating topology
+-----------------------------------------------------------------------------------------------------------
+Creation time:	0.00033926963806152344
+-----------------------------------------------------------------------------------------------------------
+Running Model
+-----------------------------------------------------------------------------------------------------------
+Model creation time:	0.014438152313232422
+-----------------------------------------------------------------------------------------------------------
+ ! --------------------------------------------------- CP Optimizer 22.1.0.0 --
+ ! Maximization problem - 76 variables, 224 constraints
+ ! Presolve      : 24 extractables eliminated
+ ! TimeLimit            = 180
+ ! LogPeriod            = 500000
+ ! SearchType           = IterativeDiving
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 173.9 (before), 173.9 (after)
+ !  . Memory usage      : 520.3 kB (before), 520.3 kB (after)
+ ! Using parallel search with 16 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         76                 -
+ + New bound is 15.03600
+                        0         64    1            -
+ + New bound is 13.04475
+ *     -6.204001       76  0.29s        1      (gap is 310.3%)
+ *     -6.086001      123  0.29s        1      (gap is 314.3%)
+ *     -5.732001     1472  0.29s        1      (gap is 327.6%)
+ *     -5.260001     1439  0.29s        2      (gap is 348.0%)
+ *     -4.906001     3406  0.29s        5      (gap is 365.9%)
+ *     -4.788001    13830  0.40s        3      (gap is 372.4%)
+ *     -4.670001    17694  0.76s        9      (gap is 379.3%)
+ *     -4.552001    18829  0.90s        4      (gap is 386.6%)
+       -4.552001    42946          1    9   F        -
+ + New bound is 12.74398 (gap is 380.0%)
+       -4.552001    40449          1   11   F     0 != w_aux_0
+ + New bound is 12.44792 (gap is 373.5%)
+       -4.552001    47132          1   13   F     0 != y_5
+ + New bound is 12.15648 (gap is 367.1%)
+       -4.552001    54575          1    7   F    76 != w_2
+ + New bound is 11.86960 (gap is 360.8%)
+       -4.552001    53433          1   11   F     0 != w_aux_0
+ + New bound is 11.58720 (gap is 354.6%)
+       -4.552001    64407          1   15   F        -
+ + New bound is 11.30921 (gap is 348.4%)
+       -4.552001    66578          1    2   F        -
+ + New bound is 11.03557 (gap is 342.4%)
+       -4.552001    76636          1   13   F        -
+ + New bound is 10.76620 (gap is 336.5%)
+       -4.552001    77455          1   11   F        -
+ + New bound is 10.50104 (gap is 330.7%)
+       -4.552001    85983          1    7   F        -
+ + New bound is 10.24003 (gap is 325.0%)
+ ! Time = 3.46s, Average fail depth = 26, Memory usage = 21.7 MB
+ ! Current bound is 10.24003 (gap is 325.0%)
+ !          Best Branches  Non-fixed    W       Branch decision
+       -4.552001    78520          1    2   F        -
+ + New bound is 9.983093 (gap is 319.3%)
+       -4.552001    89410          1   11   F        -
+ + New bound is 9.730169 (gap is 313.8%)
+       -4.552001    91501          1    4   F        -
+ + New bound is 9.481198 (gap is 308.3%)
+       -4.552001    95550          1    9            -
+ + New bound is -4.551545 (gap is 0.01%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 8 solutions found.
+ ! Best objective         : -4.552001 (optimal - effective tol. is 0.0004552)
+ ! Best bound             : -4.551545
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1636774
+ ! Number of fails        : 786699
+ ! Total memory usage     : 22.7 MB (22.6 MB CP Optimizer + 0.0 MB Concert)
+ ! Time spent in solve    : 4.11s (4.11s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 398241.8
+ ! ----------------------------------------------------------------------------
+Solution status: Optimal
+------------------------ vRAN positioning ------------------------
+vDU: 0	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+vDU: 1	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+vDU: 2	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+vDU: 3	O9	CU-DU: ['f5', 'f4', 'f3', 'f2', 'f1', 'f0'] - []
+------------------------ Selected Paths URLLC ------------------------
+Slice 0 path: [0, 1, 2, 3, 4, 5]
+Slice 1 path: [0, 1, 2, 3, 4, 6]
+Slice 2 path: [0, 1, 2, 7, 8, 9]
+Slice 3 path: [0, 1, 2, 7, 8, 10]
+------------------------ Selected Paths eMBB ------------------------
+Slice eMBB of vDU 5 path: [0, 1, 2, 3, 4, 5]
+Slice eMBB of vDU 6 path: [0, 1, 2, 7, 3, 4, 6]
+Slice eMBB of vDU 9 path: [0, 1, 2, 3, 7, 8, 9]
+Slice eMBB of vDU 10 path: [0, 1, 2, 3, 7, 8, 10]
+------------------------ Selected Phis ------------------------
+For slice 0 Phi in node 1 is 12%
+For slice 0 Phi in node 2 is 16%
+For slice 0 Phi in node 3 is 38%
+For slice 0 Phi in node 4 is 30%
+For slice 0 Phi in node 5 is 50%
+For slice 1 Phi in node 1 is 16%
+For slice 1 Phi in node 2 is 12%
+For slice 1 Phi in node 3 is 38%
+For slice 1 Phi in node 4 is 30%
+For slice 1 Phi in node 6 is 50%
+For slice 2 Phi in node 1 is 32%
+For slice 2 Phi in node 2 is 32%
+For slice 2 Phi in node 7 is 64%
+For slice 2 Phi in node 8 is 50%
+For slice 2 Phi in node 9 is 80%
+For slice 3 Phi in node 1 is 16%
+For slice 3 Phi in node 2 is 16%
+For slice 3 Phi in node 7 is 20%
+For slice 3 Phi in node 8 is 30%
+For slice 3 Phi in node 10 is 50%
+------------------------ Admitted flows ------------------------
+3 flows admitted in slice 0
+3 flows admitted in slice 1
+5 flows admitted in slice 2
+3 flows admitted in slice 3
+7.634 pkt size to vDU 0
+7.634 pkt size to vDU 1
+7.634 pkt size to vDU 2
+7.634 pkt size to vDU 3
+-------------------------------------------------------------------------------------------------------
+Model solve time:	4.161038875579834
+-------------------------------------------------------------------------------------------------------
