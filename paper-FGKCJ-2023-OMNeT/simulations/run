@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+../src/simulacoes_20221012 -n .:../src $*
+# for shared lib, use: opp_run -l ../src/simulacoes_20221012 -n .:../src $*
